@@ -11,13 +11,7 @@
         <input ref="card_number" type="text" placeholder="Card Number" />
       </div>
     </form>
-    <vue-qrcode
-      :value="url"
-      :options="{
-        errorCorrectionLevel: 'H',
-        width: 200
-      }"
-    />
+    <vue-qrcode :value="url" :options="options" />
     <div class="qr-code--url">{{ url }}</div>
     <div class="qr-code--deeplink">{{ deepLink }}</div>
     <div>
@@ -38,7 +32,11 @@ export default {
     return {
       url: 'https://google.com',
       deepLink: '',
-      buttonText: 'Generate QR'
+      buttonText: 'Generate QR',
+      options: {
+        errorCorrectionLevel: 'H',
+        width: 200
+      }
     }
   },
   methods: {
