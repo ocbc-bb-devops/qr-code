@@ -1,4 +1,4 @@
-# QR
+# QR Code
 Generate QR code
 
 **Features**

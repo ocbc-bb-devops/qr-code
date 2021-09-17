@@ -1,6 +1,6 @@
 {
-  "name": "qr",
-  "version": "0.0.1",
+  "name": "vue3-starter-template",
+  "version": "0.0.0-semantic-release",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",

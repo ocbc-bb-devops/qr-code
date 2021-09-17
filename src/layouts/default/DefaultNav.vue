@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top">
     <div class="container">
       <router-link to="/" class="navbar-brand" @click="collapseNavbar">Generate QR</router-link>
       <button
@@ -43,3 +43,9 @@ export default {
   }
 }
 </script>
+
+<style lang="scss">
+.navbar {
+  background-color: $frank-dark;
+}
+</style>
